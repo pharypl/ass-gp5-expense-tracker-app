@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nav__stylesheet.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav>
+    <div class="navbar">
+        <div class="logo"><a href="#">AEU EXPENSE TRACKER</a></div>
+        <!-- <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">DEPARTMENTS</a></li>
+            <li><a href="#">MAJORS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul> -->
+        <!-- <div class="appearance">
+            <div class="light-dark">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="color-icon">
+                <div class="icons">
+                    <i class="fas fa-palette"></i>
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="color-box">
+                    <h3>Color Switcher</h3>
+                <div class="color-switchers">
+                    <button class="btn blue active"></button>
+                    <button class="btn orange"></button>
+                    <button class="btn purple"></button>
+                    <button class="btn green"></button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</nav>
+
+    <h1>Expense Tracker</h1>
+
+    <main>
+      <header>
+        <div>
+          <h5>Total Balance</h5>
+          <span id="balance">$0.00</span>
+        </div>
+        <div>
+          <h5>Income</h5>
+          <span id="income">$0.00</span>
+        </div>
+        <div>
+          <h5>Expense</h5>
+          <span id="expense">$0.00</span>
+        </div>
+      </header>
+
+      <section>
+        <h3>Transactions</h3>
+        <ul id="transactionList"></ul>
+        <div id="st"></div>
+      </section>
+
+      <section>
+        <h3>Add Transaction</h3>
+
+        <form id="transactionForm">
+          <div>
+            <label for="type">
+              <input type="checkbox" name="type" id="type" />
+              <div class="option">
+                <span>Expense</span>
+                <span>Income</span>
+            </div>
+            </label>
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div>
+            <label for="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              value="0"
+              min="0.01"
+              step="0.01"
+              required
+            />
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <div class="footer">
+      <div class="ass">
+      <h4>ASSIGNMENT GROUP 5</h4>
+    </div>
+      <div class="member__name">
+        <h5>1. Lenh Phary</h5>
+        <h5>2. Srun Sokmeita</h5>
+        <h5>3. Noun Vanna</h5>
+        <h5>4. Seoun Vichet</h5>
+        <h5>5. Pen Sophanith</h5>
+        <h5>6. Hun Sopheanith</h5>
+      </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
